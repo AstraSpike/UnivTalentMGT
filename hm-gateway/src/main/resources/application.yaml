@@ -5,7 +5,7 @@ server:
 #    name: gateway
 #  cloud:
 #    nacos:
-#      server-addr: 192.168.43.130:8848 # nacos地址
+#      server-addr: 192.168.43.130:8847 # nacos地址
 #    gateway:
 #      routes:
 #        - id: item-service
