@@ -11,6 +11,7 @@
         <module name="cart-service" />
         <module name="pay-service" />
         <module name="hm-gateway" />
+        <module name="personnel-management-service" />
         <module name="hm-common" />
         <module name="item-service" />
         <module name="user-service" />
@@ -28,6 +29,7 @@
       <module name="hm-service" options="-parameters" />
       <module name="item-service" options="-parameters" />
       <module name="pay-service" options="-parameters" />
+      <module name="personnel-management-service" options="-parameters" />
       <module name="tarde-service" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
