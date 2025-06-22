@@ -4,11 +4,17 @@ package com.hmall.personnel.domain.po;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Date;
 
 @Data
+@Entity
 @TableName("personnel_basic_info")
+@Table(name = "personnel_basic_info")
 public class PersonnelBasicInfoPO {
+    @Id
     private Long id;
     private String name;
     private String gender;
