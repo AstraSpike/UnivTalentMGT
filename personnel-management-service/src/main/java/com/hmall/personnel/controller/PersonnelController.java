@@ -99,6 +99,28 @@ public class PersonnelController {
         return TagsConvert.dtoListToVoList(dtos);
     }
 
+    /**
+     * 保存系统生成的标签
+     * @param tags 标签DTO列表
+     */
+    @ApiOperation("保存系统生成的标签")
+    @ApiImplicitParam(name = "tags", value = "系统生成的标签列表", required = true, dataType = "List<TagsDTO>", paramType = "body")
+    @PostMapping("/tags/system")
+    public void saveSystemGeneratedTags(@RequestBody List<TagsDTO> tags) {
+        personnelService.saveSystemGeneratedTags(tags);
+    }
+
+    /**
+     * 保存用户自定义的标签
+     * @param dto 标签DTO对象
+     */
+    @ApiOperation("保存用户自定义的标签")
+    @ApiImplicitParam(name = "dto", value = "用户自定义标签信息", required = true, dataType = "TagsDTO", paramType = "body")
+    @PostMapping("/tags/user-defined")
+    public void saveUserDefinedTag(@RequestBody TagsDTO dto) {
+        personnelService.saveUserDefinedTag(dto);
+    }
+
     // ==================== Meeting 接口 ====================
     /**
      * 记录会议操作日志
@@ -123,5 +145,38 @@ public class PersonnelController {
         List<MeetingOperationLogsDTO> dtos = meetingService.getAllMeetingLogs();
         // DTO -> VO
         return MeetingOperationLogsConvert.dtoListToVoList(dtos);
+    }
+
+    /**
+     * 大屏展示：获取当前展示人员的全部基础信息、标签信息、详细资料信息
+     * @param personnelId 人员ID
+     * @return 人员基础信息VO
+     */
+    @ApiOperation("大屏展示：获取当前展示人员的全部信息")
+    @ApiImplicitParam(name = "personnelId", value = "人员ID", required = true, dataType = "Long", paramType = "path")
+    @GetMapping("/screen/{personnelId}")
+    public PersonnelBasicInfoVO getPersonnelInfoForScreen(@PathVariable Long personnelId) {
+        PersonnelBasicInfoDTO basicInfoDto = personnelService.getAllPersonnelBasicInfo().stream()
+                .filter(info -> info.getId().equals(personnelId))
+                .findFirst()
+                .orElse(null);
+        if (basicInfoDto == null) {
+            return null;
+        }
+        PersonnelBasicInfoVO basicInfoVo = PersonnelConvert.dtoToVo(basicInfoDto);
+        basicInfoVo.setTags(TagsConvert.dtoListToVoList(tagService.getAllTags()));
+        basicInfoVo.setDetailInfo(PersonnelConvert.dtoToVo(personnelService.getPersonnelDetailInfoById(personnelId)));
+        return basicInfoVo;
+    }
+
+    /**
+     * 记录会议操作日志
+     * @param log 会议操作日志DTO
+     */
+    @ApiOperation("记录会议操作日志")
+    @ApiImplicitParam(name = "log", value = "会议操作日志信息", required = true, dataType = "MeetingOperationLogsDTO", paramType = "body")
+    @PostMapping("/meetings/logs/record")
+    public void recordMeetingOperationLog(@RequestBody MeetingOperationLogsDTO log) {
+        personnelService.recordMeetingOperationLog(log);
     }
 }
