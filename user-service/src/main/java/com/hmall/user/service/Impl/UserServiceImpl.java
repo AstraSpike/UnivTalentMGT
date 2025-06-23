@@ -59,7 +59,6 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         UserLoginVO vo = new UserLoginVO();
         vo.setUserId(user.getId());
         vo.setUsername(user.getUsername());
-        vo.setBalance(user.getBalance());
         vo.setToken(token);
         return vo;
     }

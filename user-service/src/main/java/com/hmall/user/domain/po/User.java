@@ -3,6 +3,7 @@ package com.hmall.user.domain.po;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.hmall.user.enums.RoleEnum;
 import com.hmall.user.enums.UserStatus;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -40,11 +41,13 @@ public class User implements Serializable {
      */
     private String password;
 
-    /**
-     * 注册手机号
-     */
-    private String phone;
+    //角色枚举类
+   // private RoleEnum role; // 直接使用枚举类型
 
+     /**
+     * 注册邮箱
+     */
+    private String email;
     /**
      * 创建时间
      */
@@ -57,10 +60,7 @@ public class User implements Serializable {
      */
     private UserStatus status;
 
-    /**
-     * 账户余额
-     */
-    private Integer balance;
+
 
 
 }
