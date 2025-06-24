@@ -1,25 +1,26 @@
 server:
   port: 8080
-#spring:
-#  application:
-#    name: gateway
-#  cloud:
-#    nacos:
-#      server-addr: 8.217.163.166:8848 # nacos地址
-#    gateway:
-#      routes:
-#        - id: user
-#          uri: lb://user-service
-#          predicates:
-#            - Path=/users/**,
-#        - id: personnel-management
-#          uri: lb://personnel-management-service
-#          predicates:
-#            - Path=/personnel/**
-#        - id: pay
-#          uri: lb://pay-service
-#          predicates:
-#            - Path=/pay-orders/**
+spring:
+  application:
+    name: gateway
+  cloud:
+    nacos:
+      server-addr: 8.217.163.166:8848 # nacos地址
+    gateway:
+      routes:
+        - id: user
+          uri: lb://user-service
+          predicates:
+            - Path=/users/**,
+        - id: personnel-management
+          uri: lb://personnel-management-service
+          predicates:
+            - Path=/personnel/**
+        - id: pay
+          uri: lb://pay-service
+          predicates:
+            - Path=/pay-orders/**
+
 hm:
   jwt:
     location: classpath:hmall.jks
