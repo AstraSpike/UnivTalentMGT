@@ -3,8 +3,8 @@ package com.hmall.user.domain.po;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.hmall.user.enums.RoleEnum;
-import com.hmall.user.enums.UserStatus;
+//import com.hmall.user.enums.RoleEnum;
+//import com.hmall.user.enums.UserStatus;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -41,9 +41,6 @@ public class User implements Serializable {
      */
     private String password;
 
-    //角色枚举类
-   // private RoleEnum role; // 直接使用枚举类型
-
      /**
      * 注册邮箱
      */
@@ -58,9 +55,7 @@ public class User implements Serializable {
     /**
      * 使用状态（1正常 2冻结）
      */
-    private UserStatus status;
-
-
+//    private UserStatus status;
 
 
 }
