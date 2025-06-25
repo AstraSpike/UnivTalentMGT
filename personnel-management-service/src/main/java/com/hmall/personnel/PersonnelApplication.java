@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-@MapperScan("com.hmall.personnel.mapper")
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableConfigurationProperties(JwtProperties.class)

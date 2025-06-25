@@ -25,14 +25,5 @@ public class UserController {
         return userService.login(loginFormDTO);
     }
 
-//    @ApiOperation("扣减余额")
-//    @ApiImplicitParams({
-//            @ApiImplicitParam(name = "pw", value = "支付密码"),
-//            @ApiImplicitParam(name = "amount", value = "支付金额")
-//    })
-//    @PutMapping("/money/deduct")
-//    public void deductMoney(@RequestParam("pw") String pw,@RequestParam("amount") Integer amount){
-//        userService.deductMoney(pw, amount);
-//    }
 }
 

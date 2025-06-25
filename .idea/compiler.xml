@@ -7,10 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="user-service" />
         <module name="hm-gateway" />
         <module name="personnel-management-service" />
         <module name="hm-common" />
-        <module name="user-service" />
         <module name="hm-api" />
       </profile>
     </annotationProcessing>
