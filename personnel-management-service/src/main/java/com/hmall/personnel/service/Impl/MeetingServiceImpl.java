@@ -6,6 +6,7 @@ import com.hmall.personnel.repository.MeetingOperationLogsRepository;
 import com.hmall.personnel.service.IMeetingService;
 import com.hmall.personnel.util.convert.MeetingOperationLogsConvert;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,7 +14,7 @@ import java.util.Date;
 import java.util.List;
 
 @Service
-@Transactional
+@Primary
 public class MeetingServiceImpl implements IMeetingService {
 
     @Autowired
