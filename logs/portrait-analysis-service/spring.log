@@ -1,0 +1,227 @@
+12:52:25:270  INFO 32596 --- [main] c.h.p.PortraitAnalysisApplication        : Starting PortraitAnalysisApplication using Java 11.0.12 on WWJT with PID 32596 (E:\Cursor\ProjectCode\UnivTalentMGT\UnivTalentMGT\portrait-analysis-service\target\classes started by 23885 in E:\Cursor\ProjectCode\UnivTalentMGT\UnivTalentMGT)
+12:52:25:272  INFO 32596 --- [main] c.h.p.PortraitAnalysisApplication        : The following 1 profile is active: "dev"
+12:52:25:745  INFO 32596 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c1f532db-e450-38f1-8959-5a3e3b01e205
+12:52:25:931  INFO 32596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+12:52:25:931  INFO 32596 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+12:52:25:933  INFO 32596 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+12:52:25:933  INFO 32596 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+12:52:25:936  INFO 32596 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+12:52:25:941  INFO 32596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+12:52:25:941  INFO 32596 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+12:52:26:039  INFO 32596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+12:52:26:039  INFO 32596 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 745 ms
+12:52:29:163  INFO 32596 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+12:52:29:266  INFO 32596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+12:52:30:701  INFO 32596 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+12:52:30:710  INFO 32596 --- [main] c.h.p.PortraitAnalysisApplication        : Started PortraitAnalysisApplication in 7.423 seconds (JVM running for 8.378)
+12:52:39:454  INFO 32596 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:52:39:454  INFO 32596 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+12:52:39:455  INFO 32596 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+12:52:39:484  INFO 32596 --- [http-nio-8086-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+12:52:43:324  INFO 32596 --- [http-nio-8086-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+16:08:46:277  WARN 32596 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h53m32s455ms136µs400ns).
+16:23:08:213  INFO 32596 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+16:23:09:886  INFO 32596 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+16:23:16:264  INFO 35560 --- [main] c.h.p.PortraitAnalysisApplication        : Starting PortraitAnalysisApplication using Java 11.0.12 on WWJT with PID 35560 (E:\Cursor\ProjectCode\UnivTalentMGT\UnivTalentMGT\portrait-analysis-service\target\classes started by 23885 in E:\Cursor\ProjectCode\UnivTalentMGT\UnivTalentMGT)
+16:23:16:266  INFO 35560 --- [main] c.h.p.PortraitAnalysisApplication        : The following 1 profile is active: "dev"
+16:23:16:802  INFO 35560 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c1f532db-e450-38f1-8959-5a3e3b01e205
+16:23:17:073  INFO 35560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+16:23:17:074  INFO 35560 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+16:23:17:074  INFO 35560 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+16:23:17:074  INFO 35560 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+16:23:17:078  INFO 35560 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+16:23:17:086  INFO 35560 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:23:17:086  INFO 35560 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+16:23:17:211  INFO 35560 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+16:23:17:212  INFO 35560 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 921 ms
+16:23:21:153  INFO 35560 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+16:23:21:271  INFO 35560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+16:23:22:823  INFO 35560 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+16:23:22:836  INFO 35560 --- [main] c.h.p.PortraitAnalysisApplication        : Started PortraitAnalysisApplication in 8.674 seconds (JVM running for 9.656)
+16:23:38:848  INFO 35560 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:23:38:850  INFO 35560 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+16:23:38:851  INFO 35560 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+16:23:38:878  INFO 35560 --- [http-nio-8086-exec-1] c.h.p.s.i.PortraitAnalysisServiceImpl    : 开始分析人员画像，人员ID: 1
+16:23:38:895  INFO 35560 --- [http-nio-8086-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+16:23:42:461  INFO 35560 --- [http-nio-8086-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+16:23:43:241  INFO 35560 --- [http-nio-8086-exec-1] c.h.p.s.i.PortraitAnalysisServiceImpl    : 开始构建画像分析请求数据...
+16:23:43:242  INFO 35560 --- [http-nio-8086-exec-1] c.h.p.s.i.PortraitAnalysisServiceImpl    : 开始调用画像分析API，请求地址: http://127.0.0.1:5001/api/assessment/capability
+16:23:43:274  INFO 35560 --- [http-nio-8086-exec-1] c.h.p.s.i.PortraitAnalysisServiceImpl    : 正在发送HTTP请求到画像分析API...
+16:23:43:367  INFO 35560 --- [http-nio-8086-exec-1] c.h.p.s.i.PortraitAnalysisServiceImpl    : 画像分析API调用成功
+16:23:43:379  INFO 35560 --- [http-nio-8086-exec-1] c.h.p.s.i.PortraitAnalysisServiceImpl    : 画像分析处理完成，人员ID: 1
+16:30:10:176  INFO 35560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+16:30:11:565  INFO 35560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+16:30:17:593  INFO 37040 --- [main] c.h.p.PortraitAnalysisApplication        : Starting PortraitAnalysisApplication using Java 11.0.12 on WWJT with PID 37040 (E:\Cursor\ProjectCode\UnivTalentMGT\UnivTalentMGT\portrait-analysis-service\target\classes started by 23885 in E:\Cursor\ProjectCode\UnivTalentMGT\UnivTalentMGT)
+16:30:17:595  INFO 37040 --- [main] c.h.p.PortraitAnalysisApplication        : The following 1 profile is active: "dev"
+16:30:18:058  INFO 37040 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c1f532db-e450-38f1-8959-5a3e3b01e205
+16:30:18:253  INFO 37040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+16:30:18:254  INFO 37040 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+16:30:18:255  INFO 37040 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+16:30:18:255  INFO 37040 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+16:30:18:259  INFO 37040 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+16:30:18:265  INFO 37040 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:30:18:265  INFO 37040 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+16:30:18:364  INFO 37040 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+16:30:18:364  INFO 37040 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 748 ms
+16:30:21:333  INFO 37040 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+16:30:21:434  INFO 37040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+16:30:22:888  INFO 37040 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+16:30:22:897  INFO 37040 --- [main] c.h.p.PortraitAnalysisApplication        : Started PortraitAnalysisApplication in 7.3 seconds (JVM running for 8.083)
+16:30:30:750  INFO 37040 --- [http-nio-8086-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:30:30:751  INFO 37040 --- [http-nio-8086-exec-7] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+16:30:30:752  INFO 37040 --- [http-nio-8086-exec-7] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+16:30:30:772  INFO 37040 --- [http-nio-8086-exec-7] c.h.p.s.i.PortraitAnalysisServiceImpl    : 开始分析人员画像，人员ID: 1
+16:30:30:789  INFO 37040 --- [http-nio-8086-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+16:30:33:195  INFO 37040 --- [http-nio-8086-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+16:30:33:438  INFO 37040 --- [http-nio-8086-exec-7] c.h.p.s.i.PortraitAnalysisServiceImpl    : 开始构建画像分析请求数据...
+16:30:33:438  INFO 37040 --- [http-nio-8086-exec-7] c.h.p.s.i.PortraitAnalysisServiceImpl    : 开始调用画像分析API，请求地址: http://127.0.0.1:5001/api/assessment/capability
+16:30:33:467  INFO 37040 --- [http-nio-8086-exec-7] c.h.p.s.i.PortraitAnalysisServiceImpl    : 正在发送HTTP请求到画像分析API...
+16:30:33:513  INFO 37040 --- [http-nio-8086-exec-7] c.h.p.s.i.PortraitAnalysisServiceImpl    : 画像分析API调用成功，HTTP状态码: 200 OK
+16:30:33:527 ERROR 37040 --- [http-nio-8086-exec-7] c.h.p.s.i.PortraitAnalysisServiceImpl    : 调用画像分析API失败: null
+
+java.lang.NullPointerException: null
+	at com.hmall.portrait.service.impl.PortraitAnalysisServiceImpl.analyzePortrait(PortraitAnalysisServiceImpl.java:126) ~[classes/:na]
+	at com.hmall.portrait.controller.PortraitAnalysisController.analyzePortrait(PortraitAnalysisController.java:30) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+16:30:33:529 ERROR 37040 --- [http-nio-8086-exec-7] c.h.p.s.i.PortraitAnalysisServiceImpl    : 异常详细信息: 
+
+java.lang.NullPointerException: null
+	at com.hmall.portrait.service.impl.PortraitAnalysisServiceImpl.analyzePortrait(PortraitAnalysisServiceImpl.java:126) ~[classes/:na]
+	at com.hmall.portrait.controller.PortraitAnalysisController.analyzePortrait(PortraitAnalysisController.java:30) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:529) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.27.jar:5.3.27]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:623) ~[tomcat-embed-core-9.0.75.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.27.jar:5.3.27]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:926) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+16:30:33:530  INFO 37040 --- [http-nio-8086-exec-7] c.h.p.s.i.PortraitAnalysisServiceImpl    : 画像分析处理完成，人员ID: 1
+16:37:11:805  INFO 37040 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+16:37:13:563  INFO 37040 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+16:37:19:788  INFO 33684 --- [main] c.h.p.PortraitAnalysisApplication        : Starting PortraitAnalysisApplication using Java 11.0.12 on WWJT with PID 33684 (E:\Cursor\ProjectCode\UnivTalentMGT\UnivTalentMGT\portrait-analysis-service\target\classes started by 23885 in E:\Cursor\ProjectCode\UnivTalentMGT\UnivTalentMGT)
+16:37:19:789  INFO 33684 --- [main] c.h.p.PortraitAnalysisApplication        : The following 1 profile is active: "dev"
+16:37:20:277  INFO 33684 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c1f532db-e450-38f1-8959-5a3e3b01e205
+16:37:20:497  INFO 33684 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+16:37:20:498  INFO 33684 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+16:37:20:498  INFO 33684 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+16:37:20:498  INFO 33684 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+16:37:20:502  INFO 33684 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+16:37:20:506  INFO 33684 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:37:20:506  INFO 33684 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+16:37:20:592  INFO 33684 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+16:37:20:592  INFO 33684 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 777 ms
+16:37:23:601  INFO 33684 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+16:37:23:701  INFO 33684 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+16:37:25:125  INFO 33684 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+16:37:25:135  INFO 33684 --- [main] c.h.p.PortraitAnalysisApplication        : Started PortraitAnalysisApplication in 7.375 seconds (JVM running for 8.21)
+16:37:49:668  INFO 33684 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:37:49:668  INFO 33684 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+16:37:49:669  INFO 33684 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+16:37:49:685  INFO 33684 --- [http-nio-8086-exec-1] c.h.p.s.i.PortraitAnalysisServiceImpl    : 开始分析人员画像，人员ID: 1
+16:37:49:699  INFO 33684 --- [http-nio-8086-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+16:37:53:583  INFO 33684 --- [http-nio-8086-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+16:37:54:224  INFO 33684 --- [http-nio-8086-exec-1] c.h.p.s.i.PortraitAnalysisServiceImpl    : 开始构建画像分析请求数据...
+16:37:54:225  INFO 33684 --- [http-nio-8086-exec-1] c.h.p.s.i.PortraitAnalysisServiceImpl    : 开始调用画像分析API，请求地址: http://127.0.0.1:5001/api/assessment/capability
+16:37:54:249  INFO 33684 --- [http-nio-8086-exec-1] c.h.p.s.i.PortraitAnalysisServiceImpl    : 正在发送HTTP请求到画像分析API...
+16:37:54:283  INFO 33684 --- [http-nio-8086-exec-1] c.h.p.s.i.PortraitAnalysisServiceImpl    : 画像分析API调用成功，HTTP状态码: 200 OK
+16:37:54:310  INFO 33684 --- [http-nio-8086-exec-1] c.h.p.s.i.PortraitAnalysisServiceImpl    : 画像分析结果 - 总体评分: 3.9618259017564394
+16:37:54:311  INFO 33684 --- [http-nio-8086-exec-1] c.h.p.s.i.PortraitAnalysisServiceImpl    : 画像分析结果 - 维度评分: {innovation=3.733140853728002, management=4.14785399322222, research=3.927360224354641, teaching=4.038948535720895}
+16:37:54:311  INFO 33684 --- [http-nio-8086-exec-1] c.h.p.s.i.PortraitAnalysisServiceImpl    : 画像分析结果 - 能力标签: {innovation=待提升的创新能力, management=待提升的管理能力, teaching=待提升的教学能力, research=待提升的科研能力}
+16:37:54:312  INFO 33684 --- [http-nio-8086-exec-1] c.h.p.s.i.PortraitAnalysisServiceImpl    : 画像分析结果 - 发展建议: {innovation=建议培养创新思维，提升创新能力, management=建议强化管理知识，提升管理水平, teaching=建议系统提升教学能力，参加专业培训, research=建议加强科研基础，提升研究能力}
+16:37:54:312  INFO 33684 --- [http-nio-8086-exec-1] c.h.p.s.i.PortraitAnalysisServiceImpl    : 画像分析处理完成，人员ID: 1
+16:48:29:408  INFO 33684 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+16:48:30:900  INFO 33684 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

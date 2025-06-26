@@ -15,6 +15,7 @@
         <module>hm-gateway</module>
         <module>personnel-management-service</module>
         <module>demand-service</module>
+        <module>portrait-analysis-service</module>
     </modules>
 
     <parent>
