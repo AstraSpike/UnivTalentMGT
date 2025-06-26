@@ -13,7 +13,7 @@ import java.time.LocalDate;
  * 需求管理控制器
  */
 @RestController
-@RequestMapping("/api/demand")
+@RequestMapping("/demand")
 public class DemandController {
 
     @Resource

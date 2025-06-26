@@ -16,29 +16,14 @@ public class DemandDTO {
     private Long id;
 
     /**
-     * 需求标题
-     */
-    private String title;
-
-    /**
-     * 需求类型
-     */
-    private String type;
-
-    /**
-     * 需求部门
-     */
-    private String department;
-
-    /**
      * 需求内容
      */
-    private String requirements;
+    private String taskRequirements;
 
     /**
-     * 优先级
+     * 优先级：high, medium, low
      */
-    private String priority;
+    private String taskPriority;
 
     /**
      * 期望完成时间
@@ -46,9 +31,9 @@ public class DemandDTO {
     private LocalDate expectedCompletionTime;
 
     /**
-     * 状态
+     * 状态：pending, in_progress, completed
      */
-    private String status;
+    private String taskStatus;
 
     /**
      * 发起人ID
@@ -56,19 +41,9 @@ public class DemandDTO {
     private Long initiatorId;
 
     /**
-     * 发起人姓名
-     */
-    private String initiatorName;
-
-    /**
      * 处理人ID
      */
     private Long receiverId;
-
-    /**
-     * 处理人姓名
-     */
-    private String receiverName;
 
     /**
      * 创建时间

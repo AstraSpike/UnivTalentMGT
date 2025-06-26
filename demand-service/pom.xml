@@ -2,12 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
     <parent>
-        <artifactId>UnivTalentMGT</artifactId>
-        <groupId>com.hmall</groupId>
+        <groupId>com.heima</groupId>
+        <artifactId>hmall</artifactId>
         <version>1.0.0</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
 
     <artifactId>demand-service</artifactId>
 
@@ -19,9 +19,9 @@
         </dependency>
         <!-- Common -->
         <dependency>
-            <groupId>com.hmall</groupId>
+            <groupId>com.heima</groupId>
             <artifactId>hm-common</artifactId>
-            <version>${project.version}</version>
+            <version>1.0.0</version>
         </dependency>
         <!-- MySQL -->
         <dependency>
@@ -50,14 +50,24 @@
         </dependency>
         <!-- API -->
         <dependency>
-            <groupId>com.hmall</groupId>
+            <groupId>com.heima</groupId>
             <artifactId>hm-api</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <!-- knife4j -->
+        <!--web-->
         <dependency>
-            <groupId>com.github.xiaoymin</groupId>
-            <artifactId>knife4j-openapi2-spring-boot-starter</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--数据库-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <!--mybatis-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
         </dependency>
     </dependencies>
 
