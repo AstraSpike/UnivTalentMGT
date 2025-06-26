@@ -38,6 +38,11 @@ public class DemandServiceImpl implements DemandService {
         taskOrder.setCreateTime(LocalDateTime.now());
         taskOrder.setUpdateTime(LocalDateTime.now());
 
+        // 如果没有设置接收者，则返回错误
+        if (taskOrder.getReceiverId() == null) {
+            return R.error("请指定任务接收者");
+        }
+
         // 保存到数据库
         taskOrderMapper.insert(taskOrder);
         return R.ok("需求提交成功");
@@ -65,7 +70,7 @@ public class DemandServiceImpl implements DemandService {
         
         // 转换为DTO
         List<DemandDTO> demandList = BeanUtils.copyList(taskPage.getRecords(), DemandDTO.class);
-        return R.ok(new PageDTO<>(demandList, taskPage.getTotal(), page, pageSize));
+        return R.ok(PageDTO.of(taskPage, demandList));
     }
 
     @Override
@@ -86,7 +91,7 @@ public class DemandServiceImpl implements DemandService {
         
         // 转换为DTO
         List<DemandDTO> demandList = BeanUtils.copyList(taskPage.getRecords(), DemandDTO.class);
-        return R.ok(new PageDTO<>(demandList, taskPage.getTotal(), page, pageSize));
+        return R.ok(PageDTO.of(taskPage, demandList));
     }
 
     @Override
@@ -110,7 +115,7 @@ public class DemandServiceImpl implements DemandService {
         
         // 转换为DTO
         List<DemandDTO> demandList = BeanUtils.copyList(taskPage.getRecords(), DemandDTO.class);
-        return R.ok(new PageDTO<>(demandList, taskPage.getTotal(), page, pageSize));
+        return R.ok(PageDTO.of(taskPage, demandList));
     }
 
     @Override

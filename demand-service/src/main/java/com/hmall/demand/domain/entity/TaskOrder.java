@@ -31,11 +31,6 @@ public class TaskOrder {
     private Long receiverId;
 
     /**
-     * 任务需求标题
-     */
-    private String title;
-
-    /**
      * 任务需求内容
      */
     private String taskRequirements;
