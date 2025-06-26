@@ -1,7 +1,7 @@
 package com.hmall.demand.controller;
 
 import com.hmall.common.domain.PageDTO;
-import com.hmall.common.domain.R;
+import com.hmall.demand.domain.dto.ApiResponse;
 import com.hmall.demand.domain.dto.DemandDTO;
 import com.hmall.demand.service.DemandService;
 import org.springframework.web.bind.annotation.*;
@@ -13,7 +13,7 @@ import java.time.LocalDate;
  * 需求管理控制器
  */
 @RestController
-@RequestMapping("/demand")
+@RequestMapping("/api/demand")
 public class DemandController {
 
     @Resource
@@ -23,7 +23,7 @@ public class DemandController {
      * 提交人才需求
      */
     @PostMapping("/submit")
-    public R<String> submitDemand(@RequestBody DemandDTO demandData) {
+    public ApiResponse<Void> submitDemand(@RequestBody DemandDTO demandData) {
         return demandService.submitDemand(demandData);
     }
 
@@ -31,7 +31,7 @@ public class DemandController {
      * 获取我的需求列表
      */
     @GetMapping("/myDemands")
-    public R<PageDTO<DemandDTO>> getMyDemands(
+    public ApiResponse<PageDTO<DemandDTO>> getMyDemands(
             @RequestParam(required = false) String status,
             @RequestParam(required = false) LocalDate startDate,
             @RequestParam(required = false) LocalDate endDate,
@@ -44,7 +44,7 @@ public class DemandController {
      * 获取待办任务列表
      */
     @GetMapping("/todoTasks")
-    public R<PageDTO<DemandDTO>> getTodoTasks(
+    public ApiResponse<PageDTO<DemandDTO>> getTodoTasks(
             @RequestParam(required = false) String priority,
             @RequestParam(required = false) String type,
             @RequestParam(defaultValue = "1") Integer page,
@@ -56,7 +56,7 @@ public class DemandController {
      * 获取已完成任务列表
      */
     @GetMapping("/completedTasks")
-    public R<PageDTO<DemandDTO>> getCompletedTasks(
+    public ApiResponse<PageDTO<DemandDTO>> getCompletedTasks(
             @RequestParam(required = false) LocalDate startDate,
             @RequestParam(required = false) LocalDate endDate,
             @RequestParam(required = false) String department,
@@ -69,7 +69,7 @@ public class DemandController {
      * 获取需求详情
      */
     @GetMapping("/detail/{id}")
-    public R<DemandDTO> getDemandDetail(@PathVariable Long id) {
+    public ApiResponse<DemandDTO> getDemandDetail(@PathVariable Long id) {
         return demandService.getDemandDetail(id);
     }
 
@@ -77,7 +77,7 @@ public class DemandController {
      * 处理需求
      */
     @PostMapping("/process/{id}")
-    public R<String> processDemand(@PathVariable Long id) {
+    public ApiResponse<Void> processDemand(@PathVariable Long id) {
         return demandService.processDemand(id);
     }
 } 
