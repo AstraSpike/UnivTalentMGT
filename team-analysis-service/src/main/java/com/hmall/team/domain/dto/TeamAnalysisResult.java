@@ -44,21 +44,67 @@ public class TeamAnalysisResult {
 
     @Data
     public static class RecommendedStaff {
-        private Long id;
+        /**
+         * 人员ID
+         */
+        private String id;
+        
+        /**
+         * 姓名
+         */
         private String name;
+        
+        /**
+         * 职位
+         */
         private String position;
+        
+        /**
+         * 部门
+         */
         private String department;
+        
+        /**
+         * 匹配分数
+         */
         private Integer matchScore;
+        
+        /**
+         * 技能列表
+         */
         private List<String> skills;
+        
+        /**
+         * 工作经验
+         */
         private String experience;
     }
 
     @Data
     public static class TeamAnalysisInfo {
+        /**
+         * 年龄分布
+         */
         private String ageDistribution;
+        
+        /**
+         * 性别比例
+         */
         private String genderRatio;
+        
+        /**
+         * 技能覆盖度
+         */
         private String skillCoverage;
+        
+        /**
+         * 团队结构
+         */
         private Map<String, Map<String, String>> teamStructure;
+        
+        /**
+         * 推荐原因
+         */
         private List<String> recommendationReason;
     }
 } 

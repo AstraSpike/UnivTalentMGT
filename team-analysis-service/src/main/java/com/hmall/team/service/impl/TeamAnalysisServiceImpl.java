@@ -84,10 +84,32 @@ public class TeamAnalysisServiceImpl implements TeamAnalysisService {
             ResponseEntity<String> response = restTemplate.postForEntity(algorithmServiceUrl, requestEntity, String.class);
 
             if (response.getStatusCode() == HttpStatus.OK && response.getBody() != null) {
-                // 更新分析状态
+                // 解析算法服务返回的数据
+                JsonNode responseJson = objectMapper.readTree(response.getBody());
+                JsonNode data = responseJson.get("data");
+                
+                // 解析推荐人员信息
+                List<Map<String, Object>> recommendedStaff = objectMapper.convertValue(
+                    data.get("recommendedStaff"),
+                    new TypeReference<List<Map<String, Object>>>() {}
+                );
+                
+                // 解析团队分析信息
+                JsonNode teamAnalysisNode = data.get("teamAnalysis");
+                
+                // 更新分析记录
                 analysis.setStatus(1); // 分析完成
                 analysis.setDescription("分析完成");
-                analysis.setRecommendedStaffIds(response.getBody());
+                analysis.setRecommendedStaffIds(objectMapper.writeValueAsString(
+                    recommendedStaff.stream()
+                        .map(staff -> staff.get("staffId"))
+                        .collect(Collectors.toList())
+                ));
+                analysis.setMatchScore(recommendedStaff.isEmpty() ? 0 : 
+                    ((Number) recommendedStaff.get(0).get("matchScore")).intValue());
+                analysis.setAgeDistribution(teamAnalysisNode.get("ageDistribution").asText());
+                analysis.setGenderRatio(teamAnalysisNode.get("genderRatio").asText());
+                analysis.setSkillCoverage(teamAnalysisNode.get("skillCoverage").asText());
                 analysis.setUpdateTime(LocalDateTime.now());
                 teamAnalysisMapper.updateById(analysis);
 
@@ -97,6 +119,26 @@ public class TeamAnalysisServiceImpl implements TeamAnalysisService {
                 result.setStatus(analysis.getStatus());
                 result.setDescription(analysis.getDescription());
                 result.setTimestamp(System.currentTimeMillis());
+                
+                // 设置推荐人员信息
+                List<TeamAnalysisResult.RecommendedStaff> recommendedStaffList = recommendedStaff.stream()
+                    .map(staff -> {
+                        TeamAnalysisResult.RecommendedStaff staffInfo = new TeamAnalysisResult.RecommendedStaff();
+                        staffInfo.setId(staff.get("staffId").toString());
+                        staffInfo.setName(staff.get("name").toString());
+                        staffInfo.setPosition(staff.get("position").toString());
+                        staffInfo.setMatchScore(((Number) staff.get("matchScore")).intValue());
+                        return staffInfo;
+                    })
+                    .collect(Collectors.toList());
+                result.setRecommendedStaff(recommendedStaffList);
+
+                // 设置团队分析信息
+                TeamAnalysisResult.TeamAnalysisInfo teamAnalysisInfo = new TeamAnalysisResult.TeamAnalysisInfo();
+                teamAnalysisInfo.setAgeDistribution(teamAnalysisNode.get("ageDistribution").asText());
+                teamAnalysisInfo.setGenderRatio(teamAnalysisNode.get("genderRatio").asText());
+                teamAnalysisInfo.setSkillCoverage(teamAnalysisNode.get("skillCoverage").asText());
+                result.setTeamAnalysis(teamAnalysisInfo);
                 
                 return result;
             } else {
@@ -127,12 +169,33 @@ public class TeamAnalysisServiceImpl implements TeamAnalysisService {
             throw new BadRequestException("分析记录不存在");
         }
 
-        TeamAnalysisResult result = new TeamAnalysisResult();
-        result.setAnalysisId(analysis.getId());
-        result.setStatus(analysis.getStatus());
-        result.setDescription(analysis.getDescription());
-        result.setTimestamp(analysis.getCreateTime().toInstant(java.time.ZoneOffset.UTC).toEpochMilli());
+        try {
+            TeamAnalysisResult result = new TeamAnalysisResult();
+            result.setAnalysisId(analysis.getId());
+            result.setStatus(analysis.getStatus());
+            result.setDescription(analysis.getDescription());
+            result.setTimestamp(analysis.getCreateTime().toInstant(java.time.ZoneOffset.UTC).toEpochMilli());
 
-        return result;
+            // 解析推荐人员信息
+            if (analysis.getRecommendedStaffIds() != null) {
+                List<String> staffIds = objectMapper.readValue(
+                    analysis.getRecommendedStaffIds(), 
+                    new TypeReference<List<String>>() {}
+                );
+                // TODO: 根据staffIds查询人员详细信息
+            }
+
+            // 设置团队分析信息
+            TeamAnalysisResult.TeamAnalysisInfo teamAnalysisInfo = new TeamAnalysisResult.TeamAnalysisInfo();
+            teamAnalysisInfo.setAgeDistribution(analysis.getAgeDistribution());
+            teamAnalysisInfo.setGenderRatio(analysis.getGenderRatio());
+            teamAnalysisInfo.setSkillCoverage(analysis.getSkillCoverage());
+            result.setTeamAnalysis(teamAnalysisInfo);
+
+            return result;
+        } catch (JsonProcessingException e) {
+            log.error("JSON解析异常", e);
+            throw new BadRequestException("数据解析失败：" + e.getMessage());
+        }
     }
 } 

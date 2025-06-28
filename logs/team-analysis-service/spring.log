@@ -2600,3 +2600,40 @@ Caused by: com.mysql.cj.exceptions.CJException: Data source rejected establishme
 }
 (String), 1(Integer), 分析完成(String), 2025-06-28T17:23:25.272699800(LocalDateTime), 2025-06-28T17:23:25.613212300(LocalDateTime), 7(Long)
 17:23:25:923 DEBUG 32984 --- [http-nio-8086-exec-1] c.h.t.m.TeamAnalysisMapper.updateById    : <==    Updates: 1
+17:44:23:670  WARN 32984 --- [http-nio-8086-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.ArrayList<java.lang.String>` from Object value (token `JsonToken.START_OBJECT`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.util.ArrayList<java.lang.String>` from Object value (token `JsonToken.START_OBJECT`)<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 138] (through reference chain: com.hmall.team.domain.dto.TeamRequirementDTO["positionRequirements"])]
+18:00:38:000  INFO 32984 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:00:41:519  INFO 32984 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+18:00:47:562  INFO 14584 --- [main] com.hmall.team.TeamAnalysisApplication   : Starting TeamAnalysisApplication using Java 11.0.12 on WWJT with PID 14584 (E:\Cursor\ProjectCode\UnivTalentMGT\UnivTalentMGT\team-analysis-service\target\classes started by 23885 in E:\Cursor\ProjectCode\UnivTalentMGT\UnivTalentMGT)
+18:00:47:563 DEBUG 14584 --- [main] com.hmall.team.TeamAnalysisApplication   : Running with Spring Boot v2.7.12, Spring v5.3.27
+18:00:47:564  INFO 14584 --- [main] com.hmall.team.TeamAnalysisApplication   : The following 1 profile is active: "dev"
+18:00:48:053  INFO 14584 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=80ae4fcb-4a63-3fc9-9db2-939d2d43c75c
+18:00:48:258  INFO 14584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8086 (http)
+18:00:48:258  INFO 14584 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+18:00:48:258  INFO 14584 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+18:00:48:259  INFO 14584 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+18:00:48:262  INFO 14584 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+18:00:48:269  INFO 14584 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:00:48:269  INFO 14584 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:00:48:363  INFO 14584 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:00:48:363  INFO 14584 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 771 ms
+18:00:51:460  INFO 14584 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+18:00:51:573  INFO 14584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8086 (http) with context path ''
+18:00:53:001  INFO 14584 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+18:00:53:011  INFO 14584 --- [main] com.hmall.team.TeamAnalysisApplication   : Started TeamAnalysisApplication in 7.388 seconds (JVM running for 8.176)
+18:01:38:130  INFO 14584 --- [http-nio-8086-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:01:38:130  INFO 14584 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+18:01:38:131  INFO 14584 --- [http-nio-8086-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+18:01:38:205  INFO 14584 --- [http-nio-8086-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:01:42:368  INFO 14584 --- [http-nio-8086-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:01:42:542  INFO 14584 --- [http-nio-8086-exec-1] c.h.t.s.impl.TeamAnalysisServiceImpl     : 开始班子分析，需求信息: TeamRequirementDTO(id=null, teamSize=null, positionRequirements=null, abilityRequirements=null, teamworkAbilityRequirements=null, needTeamFormation=null, positions=[TeamRequirementDTO.PositionRequirement(name=Team Leader, skills=[Leadership, Project Management], experience=5, educationLevel=PhD), TeamRequirementDTO.PositionRequirement(name=Researcher, skills=[Data Analysis, Machine Learning], experience=null, educationLevel=PhD), TeamRequirementDTO.PositionRequirement(name=Teacher, skills=[Java, Machine Learning], experience=null, educationLevel=Phd)], otherConditions=TeamRequirementDTO.OtherConditions(ageRange=[30, 50], genderBalance=true))
+18:01:42:620 DEBUG 14584 --- [http-nio-8086-exec-1] c.h.t.m.TeamRequirementMapper.insert     : ==>  Preparing: INSERT INTO team_requirements ( user_id, position_requirements, create_time, update_time ) VALUES ( ?, ?, ?, ? )
+18:01:42:674 DEBUG 14584 --- [http-nio-8086-exec-1] c.h.t.m.TeamRequirementMapper.insert     : ==> Parameters: 1(Integer), [{"name":"Team Leader","skills":["Leadership","Project Management"],"experience":5,"educationLevel":"PhD"},{"name":"Researcher","skills":["Data Analysis","Machine Learning"],"experience":null,"educationLevel":"PhD"},{"name":"Teacher","skills":["Java","Machine Learning"],"experience":null,"educationLevel":"Phd"}](String), 2025-06-28T18:01:42.578871600(LocalDateTime), 2025-06-28T18:01:42.579872400(LocalDateTime)
+18:01:43:372 DEBUG 14584 --- [http-nio-8086-exec-1] c.h.t.m.TeamRequirementMapper.insert     : <==    Updates: 1
+18:01:43:386 DEBUG 14584 --- [http-nio-8086-exec-1] c.h.t.mapper.TeamAnalysisMapper.insert   : ==>  Preparing: INSERT INTO team_analysis_results ( requirement_id, status, description, create_time, update_time ) VALUES ( ?, ?, ?, ?, ? )
+18:01:43:387 DEBUG 14584 --- [http-nio-8086-exec-1] c.h.t.mapper.TeamAnalysisMapper.insert   : ==> Parameters: 18(Long), 0(Integer), 分析进行中(String), 2025-06-28T18:01:43.384093200(LocalDateTime), 2025-06-28T18:01:43.384093200(LocalDateTime)
+18:01:44:017 DEBUG 14584 --- [http-nio-8086-exec-1] c.h.t.mapper.TeamAnalysisMapper.insert   : <==    Updates: 1
+18:01:44:086 DEBUG 14584 --- [http-nio-8086-exec-1] c.h.t.m.TeamAnalysisMapper.updateById    : ==>  Preparing: UPDATE team_analysis_results SET requirement_id=?, recommended_staff_ids=?, status=?, match_score=?, age_distribution=?, gender_ratio=?, skill_coverage=?, description=?, create_time=?, update_time=? WHERE id=?
+18:01:44:091 DEBUG 14584 --- [http-nio-8086-exec-1] c.h.t.m.TeamAnalysisMapper.updateById    : ==> Parameters: 18(Long), ["S009"](String), 1(Integer), 0(Integer), Balanced(String), 50:50(String), Complete(String), 分析完成(String), 2025-06-28T18:01:43.384093200(LocalDateTime), 2025-06-28T18:01:44.075803500(LocalDateTime), 8(Long)
+18:01:45:837 DEBUG 14584 --- [http-nio-8086-exec-1] c.h.t.m.TeamAnalysisMapper.updateById    : <==    Updates: 1
+18:39:15:382  INFO 14584 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+18:39:17:076  INFO 14584 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
