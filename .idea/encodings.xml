@@ -10,10 +10,12 @@
     <file url="file://$PROJECT_DIR$/item-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/pay-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/personnel-management-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/personnel-task-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/portrait-analysis-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tarde-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/team-analysis-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/user-service/src/main/java" charset="UTF-8" />
   </component>
 </project>

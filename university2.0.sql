@@ -11,7 +11,7 @@
  Target Server Version : 90300 (9.3.0)
  File Encoding         : 65001
 
- Date: 27/06/2025 18:29:46
+ Date: 28/06/2025 11:18:52
 */
 
 SET NAMES utf8mb4;
@@ -376,6 +376,33 @@ INSERT INTO `team_analysis_reports` VALUES (9, 9, '学术水平高和教学经�
 INSERT INTO `team_analysis_reports` VALUES (10, 10, '学生管理能力和沟通能力强，团队配合默契。', '2025-06-14 17:31:15', '2025-06-14 17:31:15');
 
 -- ----------------------------
+-- Table structure for team_analysis_results
+-- ----------------------------
+DROP TABLE IF EXISTS `team_analysis_results`;
+CREATE TABLE `team_analysis_results`  (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `requirement_id` bigint NOT NULL,
+  `recommended_staff_ids` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL COMMENT '推荐的人员ID列表（JSON格式）',
+  `analysis_report` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL COMMENT '班子结构分析报告',
+  `match_score` int NULL DEFAULT NULL COMMENT '匹配度评分（0-100）',
+  `age_distribution` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL COMMENT '年龄分布',
+  `gender_ratio` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL COMMENT '性别比例',
+  `skill_coverage` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL COMMENT '技能覆盖度',
+  `team_structure` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL COMMENT '团队结构（JSON格式，包含职称、学历等分布）',
+  `recommendation_reason` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL COMMENT '推荐原因（JSON格式）',
+  `create_time` datetime NULL DEFAULT CURRENT_TIMESTAMP,
+  `update_time` datetime NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`) USING BTREE,
+  INDEX `idx_requirement_id`(`requirement_id` ASC) USING BTREE,
+  INDEX `idx_create_time`(`create_time` ASC) USING BTREE,
+  CONSTRAINT `fk_analysis_requirement` FOREIGN KEY (`requirement_id`) REFERENCES `team_requirements` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of team_analysis_results
+-- ----------------------------
+
+-- ----------------------------
 -- Table structure for team_dynamic_monitoring
 -- ----------------------------
 DROP TABLE IF EXISTS `team_dynamic_monitoring`;
@@ -443,7 +470,7 @@ INSERT INTO `team_members` VALUES (10, 5, 8, '2025-06-14 17:31:15', '2025-06-14 
 -- ----------------------------
 DROP TABLE IF EXISTS `team_requirements`;
 CREATE TABLE `team_requirements`  (
-  `id` int NOT NULL AUTO_INCREMENT,
+  `id` bigint NOT NULL AUTO_INCREMENT,
   `user_id` int NOT NULL,
   `team_size` int NULL DEFAULT NULL,
   `position_requirements` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL,
@@ -477,7 +504,7 @@ INSERT INTO `team_requirements` VALUES (10, 10, 3, '辅导员、辅导员助理'
 DROP TABLE IF EXISTS `team_screening_results`;
 CREATE TABLE `team_screening_results`  (
   `id` int NOT NULL AUTO_INCREMENT,
-  `requirement_id` int NOT NULL,
+  `requirement_id` bigint NOT NULL,
   `personnel_id` int NOT NULL,
   `position` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
   `ability_match_score` decimal(5, 2) NULL DEFAULT NULL,
@@ -486,7 +513,7 @@ CREATE TABLE `team_screening_results`  (
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `requirement_id`(`requirement_id` ASC) USING BTREE,
   INDEX `personnel_id`(`personnel_id` ASC) USING BTREE,
-  CONSTRAINT `team_screening_results_ibfk_1` FOREIGN KEY (`requirement_id`) REFERENCES `team_requirements` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
+  CONSTRAINT `fk_screening_requirement` FOREIGN KEY (`requirement_id`) REFERENCES `team_requirements` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT,
   CONSTRAINT `team_screening_results_ibfk_2` FOREIGN KEY (`personnel_id`) REFERENCES `personnel_basic_info` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
 ) ENGINE = InnoDB AUTO_INCREMENT = 11 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = DYNAMIC;
 
@@ -510,13 +537,13 @@ INSERT INTO `team_screening_results` VALUES (10, 5, 8, '图书管理员', 82.00,
 DROP TABLE IF EXISTS `teams`;
 CREATE TABLE `teams`  (
   `id` int NOT NULL AUTO_INCREMENT,
-  `requirement_id` int NOT NULL,
+  `requirement_id` bigint NOT NULL,
   `team_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
   `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `update_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`) USING BTREE,
   INDEX `requirement_id`(`requirement_id` ASC) USING BTREE,
-  CONSTRAINT `teams_ibfk_1` FOREIGN KEY (`requirement_id`) REFERENCES `team_requirements` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
+  CONSTRAINT `fk_team_requirement` FOREIGN KEY (`requirement_id`) REFERENCES `team_requirements` (`id`) ON DELETE RESTRICT ON UPDATE RESTRICT
 ) ENGINE = InnoDB AUTO_INCREMENT = 11 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = DYNAMIC;
 
 -- ----------------------------

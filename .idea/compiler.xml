@@ -8,9 +8,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demand-service" />
+        <module name="team-analysis-service" />
         <module name="hm-gateway" />
         <module name="personnel-management-service" />
         <module name="hm-common" />
+        <module name="personnel-task-service" />
         <module name="user-service" />
         <module name="portrait-analysis-service" />
         <module name="hm-api" />
@@ -35,8 +37,10 @@
       <module name="item-service" options="-parameters" />
       <module name="pay-service" options="-parameters" />
       <module name="personnel-management-service" options="-parameters" />
+      <module name="personnel-task-service" options="-parameters" />
       <module name="portrait-analysis-service" options="-parameters" />
       <module name="tarde-service" options="-parameters" />
+      <module name="team-analysis-service" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
   </component>

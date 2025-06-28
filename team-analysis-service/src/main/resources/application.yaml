@@ -1,0 +1,38 @@
+server:
+  port: 8086  # 使用不同的端口
+spring:
+  application:
+    name: team-analysis-service
+  cloud:
+    nacos:
+      server-addr: 8.217.163.166:8848 # nacos地址
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://8.217.163.166:3306/university?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123
+
+mybatis-plus:
+  configuration:
+    default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      update-strategy: not_null
+      id-type: auto
+  type-aliases-package: com.hmall.team.domain.entity
+
+logging:
+  level:
+    com.hmall: debug
+  pattern:
+    dateformat: HH:mm:ss:SSS
+  file:
+    path: "logs/${spring.application.name}"
+
+# 算法服务配置
+algorithm:
+  service:
+    url: http://localhost:5003/api/team/recommend 
