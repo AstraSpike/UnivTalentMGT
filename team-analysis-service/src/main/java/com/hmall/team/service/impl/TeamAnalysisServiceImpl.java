@@ -60,13 +60,13 @@ public class TeamAnalysisServiceImpl implements TeamAnalysisService {
             teamRequirementMapper.insert(requirement);
 
             // 2. 创建分析记录
-            TeamAnalysis analysis = new TeamAnalysis();
+        TeamAnalysis analysis = new TeamAnalysis();
             analysis.setRequirementId(requirement.getId());
             analysis.setStatus(0); // 分析进行中
-            analysis.setDescription("分析进行中");
-            analysis.setCreateTime(LocalDateTime.now());
-            analysis.setUpdateTime(LocalDateTime.now());
-            teamAnalysisMapper.insert(analysis);
+        analysis.setDescription("分析进行中");
+        analysis.setCreateTime(LocalDateTime.now());
+        analysis.setUpdateTime(LocalDateTime.now());
+        teamAnalysisMapper.insert(analysis);
 
             // 3. 构建算法服务请求数据
             Map<String, Object> requestBody = new HashMap<>();
@@ -87,7 +87,7 @@ public class TeamAnalysisServiceImpl implements TeamAnalysisService {
                 // 解析算法服务返回的数据
                 JsonNode responseJson = objectMapper.readTree(response.getBody());
                 JsonNode data = responseJson.get("data");
-                
+
                 // 解析推荐人员信息
                 List<Map<String, Object>> recommendedStaff = objectMapper.convertValue(
                     data.get("recommendedStaff"),
@@ -96,7 +96,7 @@ public class TeamAnalysisServiceImpl implements TeamAnalysisService {
                 
                 // 解析团队分析信息
                 JsonNode teamAnalysisNode = data.get("teamAnalysis");
-                
+            
                 // 更新分析记录
                 analysis.setStatus(1); // 分析完成
                 analysis.setDescription("分析完成");
@@ -113,12 +113,12 @@ public class TeamAnalysisServiceImpl implements TeamAnalysisService {
                 analysis.setUpdateTime(LocalDateTime.now());
                 teamAnalysisMapper.updateById(analysis);
 
-                // 构建返回结果
-                TeamAnalysisResult result = new TeamAnalysisResult();
-                result.setAnalysisId(analysis.getId());
+            // 构建返回结果
+            TeamAnalysisResult result = new TeamAnalysisResult();
+            result.setAnalysisId(analysis.getId());
                 result.setStatus(analysis.getStatus());
                 result.setDescription(analysis.getDescription());
-                result.setTimestamp(System.currentTimeMillis());
+            result.setTimestamp(System.currentTimeMillis());
                 
                 // 设置推荐人员信息
                 List<TeamAnalysisResult.RecommendedStaff> recommendedStaffList = recommendedStaff.stream()
@@ -139,8 +139,8 @@ public class TeamAnalysisServiceImpl implements TeamAnalysisService {
                 teamAnalysisInfo.setGenderRatio(teamAnalysisNode.get("genderRatio").asText());
                 teamAnalysisInfo.setSkillCoverage(teamAnalysisNode.get("skillCoverage").asText());
                 result.setTeamAnalysis(teamAnalysisInfo);
-                
-                return result;
+
+            return result;
             } else {
                 throw new BadRequestException("算法服务返回异常：" + response.getStatusCode());
             }
@@ -170,10 +170,10 @@ public class TeamAnalysisServiceImpl implements TeamAnalysisService {
         }
 
         try {
-            TeamAnalysisResult result = new TeamAnalysisResult();
-            result.setAnalysisId(analysis.getId());
-            result.setStatus(analysis.getStatus());
-            result.setDescription(analysis.getDescription());
+        TeamAnalysisResult result = new TeamAnalysisResult();
+        result.setAnalysisId(analysis.getId());
+        result.setStatus(analysis.getStatus());
+        result.setDescription(analysis.getDescription());
             result.setTimestamp(analysis.getCreateTime().toInstant(java.time.ZoneOffset.UTC).toEpochMilli());
 
             // 解析推荐人员信息

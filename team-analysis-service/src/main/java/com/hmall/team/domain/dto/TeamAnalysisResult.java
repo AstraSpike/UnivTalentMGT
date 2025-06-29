@@ -15,6 +15,11 @@ public class TeamAnalysisResult {
     private Long analysisId;
 
     /**
+     * 团队ID
+     */
+    private Integer teamId;
+
+    /**
      * 推荐人员列表
      */
     private List<RecommendedStaff> recommendedStaff;
