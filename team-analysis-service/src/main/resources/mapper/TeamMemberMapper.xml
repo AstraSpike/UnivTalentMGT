@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hmall.team.mapper.TeamMemberMapper">
+    
+    <!-- 批量插入团队成员 -->
+    <insert id="insertBatch">
+        INSERT INTO team_members (team_id, personnel_id, create_time, update_time)
+        VALUES
+        <foreach collection="members" item="member" separator=",">
+            (#{member.teamId}, #{member.personnelId}, #{member.createTime}, #{member.updateTime})
+        </foreach>
+    </insert>
+    
+    <!-- 根据团队ID和人员ID列表删除团队成员 -->
+    <delete id="deleteByTeamIdAndPersonnelIds">
+        DELETE FROM team_members
+        WHERE team_id = #{teamId}
+        AND personnel_id IN
+        <foreach collection="personnelIds" item="personnelId" open="(" separator="," close=")">
+            #{personnelId}
+        </foreach>
+    </delete>
+    
+    <!-- 查询团队成员详细信息 -->
+    <select id="selectMemberInfosByTeamId" resultType="java.util.Map">
+        SELECT 
+            p.id,
+            p.name,
+            p.position,
+            p.title,
+            p.department,
+            p.education,
+            p.political_status,
+            p.age
+        FROM team_members tm
+        LEFT JOIN personnel_basic_info p ON tm.personnel_id = p.id
+        WHERE tm.team_id = #{teamId}
+    </select>
+    
+</mapper> 
