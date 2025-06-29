@@ -18,6 +18,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
@@ -117,31 +118,77 @@ public class TeamInformationServiceImpl implements TeamInformationService {
         if (team == null) {
             throw new BadRequestException("团队不存在");
         }
+        log.info("开始分析团队, teamId={}, teamName={}", teamId, team.getTeamName());
         
         // 2. 获取团队成员信息
         List<Map<String, Object>> memberInfos = teamMemberMapper.selectMemberInfosByTeamId(teamId);
+        log.info("获取到团队成员数量: {}", memberInfos.size());
+        
+        // 输出每个成员的详细信息
+        memberInfos.forEach(info -> {
+            log.info("成员信息: id={}, name={}, position={}, title={}, department={}, education={}, age={}, gender={}, experience={}, skills={}",
+                info.get("id"),
+                info.get("name"),
+                info.get("position"),
+                info.get("title"),
+                info.get("department"),
+                info.get("education"),
+                info.get("age"),
+                info.get("gender"),
+                info.get("experience"),
+                info.get("skills")
+            );
+        });
         
         // 3. 构建分析请求
         TeamRequirementDTO requirementDTO = new TeamRequirementDTO();
         requirementDTO.setTeamSize(memberInfos.size());
         
-        // 提取职位信息
+        // 提取职位信息和人员详细信息
         List<TeamRequirementDTO.PositionRequirement> positions = memberInfos.stream()
             .map(info -> {
                 TeamRequirementDTO.PositionRequirement position = new TeamRequirementDTO.PositionRequirement();
-                position.setName(info.get("position").toString());
-                // 这里可以根据需要设置其他属性
-                position.setSkills(Collections.emptyList());
-                position.setExperience(0);
-                position.setEducationLevel("");
+                position.setName(info.get("position") != null ? info.get("position").toString() : "未知职位");
+                
+                // 处理技能信息
+                String skillsStr = (String) info.get("skills");
+                List<String> skills = new ArrayList<>();
+                if (skillsStr != null && !skillsStr.isEmpty()) {
+                    // 假设技能是以逗号分隔的字符串
+                    skills = Arrays.asList(skillsStr.split(","));
+                }
+                position.setSkills(skills);
+                
+                // 处理经验和教育信息
+                position.setExperience(info.get("experience") != null ? 
+                    Integer.parseInt(info.get("experience").toString()) : 0);
+                position.setEducationLevel(info.get("education") != null ? 
+                    info.get("education").toString() : "");
+                
+                // 添加其他可能需要的信息
+                position.setTitle(info.get("title") != null ? 
+                    info.get("title").toString() : "");
+                position.setDepartment(info.get("department") != null ? 
+                    info.get("department").toString() : "");
+                position.setAge(info.get("age") != null ? 
+                    Integer.parseInt(info.get("age").toString()) : 0);
+                position.setGender(info.get("gender") != null ? 
+                    info.get("gender").toString() : "");
+                    
                 return position;
             })
             .collect(Collectors.toList());
         requirementDTO.setPositions(positions);
         
+        // 输出构建的分析请求
+        log.info("准备调用分析服务, 请求参数: {}", requirementDTO);
+        
         // 4. 调用分析服务
         TeamAnalysisResult result = teamAnalysisService.analyzeTeam(requirementDTO);
         result.setTeamId(teamId);
+        
+        // 输出分析结果
+        log.info("分析服务返回结果: {}", result);
         
         return result;
     }

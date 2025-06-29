@@ -69,6 +69,26 @@ public class TeamRequirementDTO {
          * 学历要求
          */
         private String educationLevel;
+
+        /**
+         * 职位头衔
+         */
+        private String title;
+
+        /**
+         * 部门
+         */
+        private String department;
+
+        /**
+         * 年龄
+         */
+        private Integer age;
+
+        /**
+         * 性别
+         */
+        private String gender;
     }
 
     @Data

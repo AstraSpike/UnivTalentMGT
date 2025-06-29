@@ -31,10 +31,16 @@
             p.department,
             p.education,
             p.political_status,
-            p.age
+            p.age,
+            p.gender,
+            TIMESTAMPDIFF(YEAR, p.entry_time, CURDATE()) as experience,
+            GROUP_CONCAT(DISTINCT t.tag_name) as skills
         FROM team_members tm
         LEFT JOIN personnel_basic_info p ON tm.personnel_id = p.id
+        LEFT JOIN personnel_tags pt ON p.id = pt.personnel_id
+        LEFT JOIN tags t ON pt.tag_id = t.id
         WHERE tm.team_id = #{teamId}
+        GROUP BY p.id
     </select>
     
 </mapper> 

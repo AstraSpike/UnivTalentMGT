@@ -14,10 +14,10 @@
         <module>user-service</module>
         <module>hm-gateway</module>
         <module>personnel-management-service</module>
-        <module>demand-service</module>
         <module>portrait-analysis-service</module>
         <module>team-analysis-service</module>
         <module>personnel-task-service</module>
+        <module>training-management-service</module>
     </modules>
 
     <parent>

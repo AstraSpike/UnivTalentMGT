@@ -7,11 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="demand-service" />
         <module name="team-analysis-service" />
         <module name="hm-gateway" />
         <module name="personnel-management-service" />
         <module name="hm-common" />
+        <module name="training-management-service" />
         <module name="personnel-task-service" />
         <module name="user-service" />
         <module name="portrait-analysis-service" />
@@ -20,6 +20,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cart-service" target="11" />
+      <module name="demand-service" target="11" />
       <module name="hm-service" target="11" />
       <module name="item-service" target="11" />
       <module name="pay-service" target="11" />
@@ -41,6 +42,7 @@
       <module name="portrait-analysis-service" options="-parameters" />
       <module name="tarde-service" options="-parameters" />
       <module name="team-analysis-service" options="-parameters" />
+      <module name="training-management-service" options="-parameters" />
       <module name="user-service" options="-parameters" />
     </option>
   </component>

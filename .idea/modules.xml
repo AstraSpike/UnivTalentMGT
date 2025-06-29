@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/personnel-management-service/personnel-management-service.iml" filepath="$PROJECT_DIR$/personnel-management-service/personnel-management-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/personnel-task-service/personnel-task-service.iml" filepath="$PROJECT_DIR$/personnel-task-service/personnel-task-service.iml" />
     </modules>
   </component>
 </project>
