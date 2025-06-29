@@ -24,7 +24,6 @@ public class TeamInformationController {
     /**
      * 创建团队
      */
-    
     @PostMapping("/create")
     public ApiResponse<Team> createTeam(@RequestBody TeamCreateDTO createDTO) {
         try {

@@ -77,6 +77,9 @@ ALTER TABLE teams ADD CONSTRAINT fk_team_requirement_v2
 -- 删除旧的team_analysis_results表（如果存在）
 DROP TABLE IF EXISTS team_analysis_results;
 
+-- 为teams表添加team_description字段
+ALTER TABLE teams ADD COLUMN team_description TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL COMMENT '团队描述' AFTER team_name;
+
 -- 创建班子分析结果表
 CREATE TABLE team_analysis_results (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
