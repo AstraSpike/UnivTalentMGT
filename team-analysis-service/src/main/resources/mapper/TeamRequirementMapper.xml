@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hmall.team.mapper.TeamRequirementMapper">
+    
+    <!-- 插入团队需求 -->
+    <insert id="insert" parameterType="com.hmall.team.domain.entity.TeamRequirement" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO team_requirements (
+            user_id,
+            team_size,
+            position_requirements,
+            ability_requirements,
+            teamwork_ability_requirements,
+            need_team_formation,
+            create_time,
+            update_time
+        ) VALUES (
+            #{userId},
+            #{teamSize},
+            #{positionRequirements},
+            #{abilityRequirements},
+            #{teamworkAbilityRequirements},
+            #{needTeamFormation},
+            #{createTime},
+            #{updateTime}
+        )
+    </insert>
+    
+    <!-- 根据ID查询团队需求 -->
+    <select id="selectById" resultType="com.hmall.team.domain.entity.TeamRequirement">
+        SELECT 
+            id,
+            user_id,
+            team_size,
+            position_requirements,
+            ability_requirements,
+            teamwork_ability_requirements,
+            need_team_formation,
+            create_time,
+            update_time
+        FROM team_requirements
+        WHERE id = #{id}
+    </select>
+    
+</mapper> 
