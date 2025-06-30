@@ -4,9 +4,11 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.hmall.team.domain.entity.TeamMember;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-
+import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Delete;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * 团队成员Mapper接口
@@ -34,4 +36,16 @@ public interface TeamMemberMapper extends BaseMapper<TeamMember> {
      * @return 成员信息列表
      */
     List<Map<String, Object>> selectMemberInfosByTeamId(@Param("teamId") Integer teamId);
+
+    @Select("SELECT * FROM team_members WHERE team_id = #{teamId}")
+    List<TeamMember> findByTeamId(Integer teamId);
+    
+    @Delete("<script>" +
+            "DELETE FROM team_members WHERE team_id = #{teamId} " +
+            "AND personnel_id IN " +
+            "<foreach collection='personnelIds' item='id' open='(' separator=',' close=')'>" +
+            "#{id}" +
+            "</foreach>" +
+            "</script>")
+    int deleteByTeamIdAndPersonnelIds(Integer teamId, Set<Integer> personnelIds);
 } 

@@ -35,12 +35,12 @@ public class TeamRequirement {
     private String positionRequirements;
 
     /**
-     * 能力要求（JSON格式）
+     * 能力要求
      */
     private String abilityRequirements;
 
     /**
-     * 团队协作能力要求（JSON格式）
+     * 团队协作能力要求
      */
     private String teamworkAbilityRequirements;
 

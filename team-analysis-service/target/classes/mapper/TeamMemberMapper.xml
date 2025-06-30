@@ -30,6 +30,28 @@
             p.title,
             p.department,
             p.education,
+            p.age,
+            p.gender,
+            p.experience,
+            GROUP_CONCAT(t.tag_name) as skills,
+            tm.create_time as join_time
+        FROM team_members tm
+        JOIN personnel_basic_info p ON tm.personnel_id = p.id
+        LEFT JOIN personnel_tags pt ON p.id = pt.personnel_id
+        LEFT JOIN tags t ON pt.tag_id = t.id
+        WHERE tm.team_id = #{teamId}
+        GROUP BY p.id, p.name, p.position, p.title, p.department, p.education, p.age, p.gender, p.experience, tm.create_time
+    </select>
+    
+    <!-- 根据团队ID查询成员信息 -->
+    <select id="selectByTeamId" resultType="java.util.Map">
+        SELECT 
+            p.id,
+            p.name,
+            p.position,
+            p.title,
+            p.department,
+            p.education,
             p.political_status,
             p.age,
             p.gender,
