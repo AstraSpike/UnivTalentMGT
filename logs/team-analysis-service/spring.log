@@ -672,3 +672,221 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Cannot delete or u
 12:25:31:751  INFO 7136 --- [http-nio-8087-exec-10] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
 12:26:04:414  INFO 7136 --- [http-nio-8087-exec-1] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
 12:26:14:890  INFO 7136 --- [http-nio-8087-exec-8] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+12:58:28:161  INFO 7136 --- [http-nio-8087-exec-2] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+12:58:35:564  INFO 7136 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+12:58:55:055  INFO 7136 --- [http-nio-8087-exec-6] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+12:59:07:338  INFO 7136 --- [http-nio-8087-exec-7] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+13:04:08:851  INFO 7136 --- [http-nio-8087-exec-5] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+13:04:15:278  INFO 7136 --- [http-nio-8087-exec-9] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+13:05:32:822  INFO 7136 --- [http-nio-8087-exec-4] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+13:05:40:760  INFO 7136 --- [http-nio-8087-exec-10] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+13:10:18:571  INFO 7136 --- [http-nio-8087-exec-1] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+13:10:25:888  INFO 7136 --- [http-nio-8087-exec-8] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+13:10:42:309  INFO 7136 --- [http-nio-8087-exec-2] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+13:10:47:322  INFO 7136 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+13:11:19:268  INFO 7136 --- [http-nio-8087-exec-6] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+13:11:21:380  INFO 7136 --- [http-nio-8087-exec-7] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+13:11:21:523  WARN 7136 --- [http-nio-8087-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5208eb50 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+13:11:21:687  WARN 7136 --- [http-nio-8087-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6ad6ed0d (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+13:11:21:846  WARN 7136 --- [http-nio-8087-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@77f45132 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+13:11:21:998  WARN 7136 --- [http-nio-8087-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@62b366f7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+13:11:22:152  WARN 7136 --- [http-nio-8087-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@443a5ba4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+13:11:22:301  WARN 7136 --- [http-nio-8087-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@195968ab (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+13:11:22:305  INFO 7136 --- [http-nio-8087-exec-5] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+13:11:22:457  WARN 7136 --- [http-nio-8087-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4cf1c773 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+13:11:22:610  WARN 7136 --- [http-nio-8087-exec-7] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@358c94c4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+13:11:23:638  WARN 7136 --- [http-nio-8087-exec-5] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@36547ad1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+13:11:32:543  INFO 7136 --- [http-nio-8087-exec-9] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+13:13:05:916  INFO 7136 --- [http-nio-8087-exec-4] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+13:13:13:111  INFO 7136 --- [http-nio-8087-exec-10] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+13:16:40:941  INFO 7136 --- [http-nio-8087-exec-1] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+13:16:47:931  INFO 7136 --- [http-nio-8087-exec-8] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+13:22:38:892  INFO 7136 --- [http-nio-8087-exec-2] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+13:22:41:576  INFO 7136 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+13:22:48:926  INFO 7136 --- [http-nio-8087-exec-6] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+13:27:07:430  INFO 7136 --- [http-nio-8087-exec-4] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+15:47:44:414  WARN 7136 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h5m32s479ms511µs800ns).
+16:20:43:600  WARN 7136 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m28s716ms525µs300ns).
+16:22:29:526  INFO 7136 --- [http-nio-8087-exec-10] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:23:29:619  INFO 7136 --- [http-nio-8087-exec-1] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:23:40:787  INFO 7136 --- [http-nio-8087-exec-8] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:24:07:231  INFO 7136 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:24:15:135  INFO 7136 --- [http-nio-8087-exec-6] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:24:38:947  INFO 7136 --- [http-nio-8087-exec-7] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:24:46:291  INFO 7136 --- [http-nio-8087-exec-5] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:25:09:991  INFO 7136 --- [http-nio-8087-exec-9] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:25:20:150  INFO 7136 --- [http-nio-8087-exec-4] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:32:17:407  INFO 7136 --- [http-nio-8087-exec-10] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:32:22:294  INFO 7136 --- [http-nio-8087-exec-1] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:32:48:979  INFO 7136 --- [http-nio-8087-exec-2] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:32:57:679  INFO 7136 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:33:46:757  INFO 7136 --- [http-nio-8087-exec-7] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:33:52:403  INFO 7136 --- [http-nio-8087-exec-5] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:34:03:326  INFO 7136 --- [http-nio-8087-exec-9] c.h.t.s.impl.TeamInformationServiceImpl  : 开始删除团队: 25
+16:34:03:773  INFO 7136 --- [http-nio-8087-exec-9] c.h.t.s.impl.TeamInformationServiceImpl  : 删除职位需求成员关联成功: 27
+16:34:04:606  INFO 7136 --- [http-nio-8087-exec-9] c.h.t.s.impl.TeamInformationServiceImpl  : 删除职位需求成员关联成功: 28
+16:34:04:832  INFO 7136 --- [http-nio-8087-exec-9] c.h.t.s.impl.TeamInformationServiceImpl  : 删除职位需求成功: [27, 28]
+16:34:05:039  INFO 7136 --- [http-nio-8087-exec-9] c.h.t.s.impl.TeamInformationServiceImpl  : 删除团队基本信息成功: 25
+16:34:05:357  INFO 7136 --- [http-nio-8087-exec-9] c.h.t.s.impl.TeamInformationServiceImpl  : 删除团队需求成功: 40
+16:34:05:906  INFO 7136 --- [http-nio-8087-exec-4] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:34:27:400  INFO 7136 --- [http-nio-8087-exec-10] c.h.t.s.impl.TeamInformationServiceImpl  : 开始删除团队: 26
+16:34:27:816  INFO 7136 --- [http-nio-8087-exec-10] c.h.t.s.impl.TeamInformationServiceImpl  : 删除职位需求成员关联成功: 29
+16:34:28:335  INFO 7136 --- [http-nio-8087-exec-10] c.h.t.s.impl.TeamInformationServiceImpl  : 删除职位需求成员关联成功: 30
+16:34:28:543  INFO 7136 --- [http-nio-8087-exec-10] c.h.t.s.impl.TeamInformationServiceImpl  : 删除职位需求成功: [29, 30]
+16:34:28:764  INFO 7136 --- [http-nio-8087-exec-10] c.h.t.s.impl.TeamInformationServiceImpl  : 删除团队基本信息成功: 26
+16:34:29:077  INFO 7136 --- [http-nio-8087-exec-10] c.h.t.s.impl.TeamInformationServiceImpl  : 删除团队需求成功: 41
+16:34:29:610  INFO 7136 --- [http-nio-8087-exec-1] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:34:55:395  INFO 7136 --- [http-nio-8087-exec-2] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:35:04:148  INFO 7136 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:42:02:997  INFO 7136 --- [http-nio-8087-exec-6] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:42:11:949  INFO 7136 --- [http-nio-8087-exec-7] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:45:07:498  INFO 7136 --- [http-nio-8087-exec-5] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:45:13:043  INFO 7136 --- [http-nio-8087-exec-9] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:45:38:969  INFO 7136 --- [http-nio-8087-exec-4] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:45:46:883  INFO 7136 --- [http-nio-8087-exec-10] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:52:56:156  INFO 7136 --- [http-nio-8087-exec-1] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+16:53:03:435  INFO 7136 --- [http-nio-8087-exec-8] c.h.t.s.impl.TeamInformationServiceImpl  : 开始获取团队列表, pageNum=1, pageSize=10
+17:06:02:503  INFO 7136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+17:06:02:518  INFO 7136 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+18:33:53:460  INFO 24944 --- [main] com.hmall.team.TeamAnalysisApplication   : Starting TeamAnalysisApplication using Java 11.0.12 on WWJT with PID 24944 (E:\Cursor\ProjectCode\UnivTalentMGT\UnivTalentMGT\team-analysis-service\target\classes started by 23885 in E:\Cursor\ProjectCode\UnivTalentMGT\UnivTalentMGT)
+18:33:53:462 DEBUG 24944 --- [main] com.hmall.team.TeamAnalysisApplication   : Running with Spring Boot v2.7.12, Spring v5.3.27
+18:33:53:463  INFO 24944 --- [main] com.hmall.team.TeamAnalysisApplication   : The following 1 profile is active: "dev"
+18:33:54:204  INFO 24944 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b9673cb8-1524-3f20-a073-c79fbb0ad36a
+18:33:54:481  INFO 24944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8087 (http)
+18:33:54:482  INFO 24944 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+18:33:54:482  INFO 24944 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+18:33:54:482  INFO 24944 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+18:33:54:486  INFO 24944 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+18:33:54:493  INFO 24944 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:33:54:493  INFO 24944 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:33:54:610  INFO 24944 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:33:54:610  INFO 24944 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1111 ms
+18:33:56:099 ERROR 24944 --- [main] c.b.m.core.MybatisConfiguration          : mapper[com.hmall.team.mapper.TeamMemberMapper.deleteByTeamIdAndPersonnelIds] is ignored, because it exists, maybe from xml file
+18:33:59:307  INFO 24944 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+18:33:59:439  INFO 24944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8087 (http) with context path ''
+18:34:01:317  INFO 24944 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+18:34:01:328  INFO 24944 --- [main] com.hmall.team.TeamAnalysisApplication   : Started TeamAnalysisApplication in 10.246 seconds (JVM running for 11.359)
+18:35:07:742  INFO 24944 --- [http-nio-8087-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:35:07:744  INFO 24944 --- [http-nio-8087-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+18:35:07:746  INFO 24944 --- [http-nio-8087-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+18:35:07:820  INFO 24944 --- [http-nio-8087-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:35:09:656  INFO 24944 --- [http-nio-8087-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:35:10:094  INFO 24944 --- [http-nio-8087-exec-2] c.h.t.s.impl.TeamInformationServiceImpl  : 开始创建团队: 资料分析专业
+18:35:10:094  INFO 24944 --- [http-nio-8087-exec-2] c.h.t.s.impl.TeamInformationServiceImpl  : 能力要求: 具备专业知识和教学能力
+18:35:10:094  INFO 24944 --- [http-nio-8087-exec-2] c.h.t.s.impl.TeamInformationServiceImpl  : 团队协作能力要求: 良好的团队协作精神
+18:35:10:109  INFO 24944 --- [http-nio-8087-exec-2] c.h.t.s.impl.TeamInformationServiceImpl  : 职位需求JSON: [{"positionName":"教学主管","personNum":1,"position":"教师","education":"本科","major":"计算机科学与技术","maxAge":45,"minAge":20,"selectedPersonnelIds":null},{"positionName":"课程教师","personNum":3,"position":"教师","education":"硕士","major":"计算机科学","maxAge":50,"minAge":20,"selectedPersonnelIds":null}]
+18:35:10:109  INFO 24944 --- [http-nio-8087-exec-2] c.h.t.s.impl.TeamInformationServiceImpl  : 设置到实体的能力要求: 具备专业知识和教学能力
+18:35:10:109  INFO 24944 --- [http-nio-8087-exec-2] c.h.t.s.impl.TeamInformationServiceImpl  : 设置到实体的团队协作能力要求: 良好的团队协作精神
+18:35:10:109  INFO 24944 --- [http-nio-8087-exec-2] c.h.t.s.impl.TeamInformationServiceImpl  : 准备插入数据库的团队需求实体: TeamRequirement(id=null, userId=1, teamSize=5, positionRequirements=教学主管、课程教师, abilityRequirements=具备专业知识和教学能力, teamworkAbilityRequirements=良好的团队协作精神, needTeamFormation=true, createTime=2025-06-30T18:35:10.094243700, updateTime=2025-06-30T18:35:10.095217300)
+18:35:10:395  INFO 24944 --- [http-nio-8087-exec-2] c.h.t.s.impl.TeamInformationServiceImpl  : 团队需求创建成功, id=44, 能力要求=具备专业知识和教学能力, 团队协作能力要求=良好的团队协作精神
+18:35:10:639  INFO 24944 --- [http-nio-8087-exec-2] c.h.t.s.impl.TeamInformationServiceImpl  : 团队基本信息创建成功, id=29
+19:05:53:123  WARN 24944 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m42s891ms783µs100ns).
+19:06:53:795  INFO 24944 --- [http-nio-8087-exec-6] c.h.t.s.impl.TeamInformationServiceImpl  : 开始创建团队: 资料分析专业
+19:06:53:796  INFO 24944 --- [http-nio-8087-exec-6] c.h.t.s.impl.TeamInformationServiceImpl  : 能力要求: 具备专业知识和教学能力
+19:06:53:796  INFO 24944 --- [http-nio-8087-exec-6] c.h.t.s.impl.TeamInformationServiceImpl  : 团队协作能力要求: 良好的团队协作精神
+19:06:53:796  INFO 24944 --- [http-nio-8087-exec-6] c.h.t.s.impl.TeamInformationServiceImpl  : 职位需求JSON: [{"positionName":"教学主管","personNum":1,"position":"教师","education":"本科","major":"计算机科学与技术","maxAge":45,"minAge":20,"selectedPersonnelIds":null},{"positionName":"课程教师","personNum":3,"position":"教师","education":"硕士","major":"计算机科学","maxAge":50,"minAge":20,"selectedPersonnelIds":null}]
+19:06:53:797  INFO 24944 --- [http-nio-8087-exec-6] c.h.t.s.impl.TeamInformationServiceImpl  : 设置到实体的能力要求: 具备专业知识和教学能力
+19:06:53:797  INFO 24944 --- [http-nio-8087-exec-6] c.h.t.s.impl.TeamInformationServiceImpl  : 设置到实体的团队协作能力要求: 良好的团队协作精神
+19:06:53:797  INFO 24944 --- [http-nio-8087-exec-6] c.h.t.s.impl.TeamInformationServiceImpl  : 准备插入数据库的团队需求实体: TeamRequirement(id=null, userId=1, teamSize=5, positionRequirements=教学主管、课程教师, abilityRequirements=具备专业知识和教学能力, teamworkAbilityRequirements=良好的团队协作精神, needTeamFormation=true, createTime=2025-06-30T19:06:53.796191800, updateTime=2025-06-30T19:06:53.796191800)
+19:06:54:609  INFO 24944 --- [http-nio-8087-exec-6] c.h.t.s.impl.TeamInformationServiceImpl  : 团队需求创建成功, id=47, 能力要求=具备专业知识和教学能力, 团队协作能力要求=良好的团队协作精神
+19:06:55:777  INFO 24944 --- [http-nio-8087-exec-6] c.h.t.s.impl.TeamInformationServiceImpl  : 团队基本信息创建成功, id=32
+19:10:31:943  INFO 24944 --- [http-nio-8087-exec-8] c.h.t.s.impl.TeamInformationServiceImpl  : 开始创建团队: 资料分析专业
+19:10:31:943  INFO 24944 --- [http-nio-8087-exec-8] c.h.t.s.impl.TeamInformationServiceImpl  : 能力要求: 具备专业知识和教学能力
+19:10:31:943  INFO 24944 --- [http-nio-8087-exec-8] c.h.t.s.impl.TeamInformationServiceImpl  : 团队协作能力要求: 良好的团队协作精神
+19:10:31:943  INFO 24944 --- [http-nio-8087-exec-8] c.h.t.s.impl.TeamInformationServiceImpl  : 职位需求JSON: [{"positionName":"教学主管","personNum":1,"position":"系主任","education":"博士","major":"生物学","maxAge":60,"minAge":20,"selectedPersonnelIds":null},{"positionName":"课程教师","personNum":3,"position":"教师","education":"本科","major":"计算机科学","maxAge":50,"minAge":20,"selectedPersonnelIds":null}]
+19:10:31:943  INFO 24944 --- [http-nio-8087-exec-8] c.h.t.s.impl.TeamInformationServiceImpl  : 设置到实体的能力要求: 具备专业知识和教学能力
+19:10:31:943  INFO 24944 --- [http-nio-8087-exec-8] c.h.t.s.impl.TeamInformationServiceImpl  : 设置到实体的团队协作能力要求: 良好的团队协作精神
+19:10:31:943  INFO 24944 --- [http-nio-8087-exec-8] c.h.t.s.impl.TeamInformationServiceImpl  : 准备插入数据库的团队需求实体: TeamRequirement(id=null, userId=1, teamSize=5, positionRequirements=教学主管、课程教师, abilityRequirements=具备专业知识和教学能力, teamworkAbilityRequirements=良好的团队协作精神, needTeamFormation=true, createTime=2025-06-30T19:10:31.943436600, updateTime=2025-06-30T19:10:31.943436600)
+19:10:32:453  INFO 24944 --- [http-nio-8087-exec-8] c.h.t.s.impl.TeamInformationServiceImpl  : 团队需求创建成功, id=48, 能力要求=具备专业知识和教学能力, 团队协作能力要求=良好的团队协作精神
+19:10:32:646  INFO 24944 --- [http-nio-8087-exec-8] c.h.t.s.impl.TeamInformationServiceImpl  : 团队基本信息创建成功, id=33
+19:51:04:054  WARN 24944 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m10s578ms702µs700ns).
+20:09:17:798  WARN 24944 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m43s502ms888µs900ns).
+20:20:26:606  INFO 24944 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+20:20:27:619  INFO 24944 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+20:20:34:503  INFO 14800 --- [main] com.hmall.team.TeamAnalysisApplication   : Starting TeamAnalysisApplication using Java 11.0.12 on WWJT with PID 14800 (E:\Cursor\ProjectCode\UnivTalentMGT\UnivTalentMGT\team-analysis-service\target\classes started by 23885 in E:\Cursor\ProjectCode\UnivTalentMGT\UnivTalentMGT)
+20:20:34:505 DEBUG 14800 --- [main] com.hmall.team.TeamAnalysisApplication   : Running with Spring Boot v2.7.12, Spring v5.3.27
+20:20:34:506  INFO 14800 --- [main] com.hmall.team.TeamAnalysisApplication   : The following 1 profile is active: "dev"
+20:20:35:138  INFO 14800 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b9673cb8-1524-3f20-a073-c79fbb0ad36a
+20:20:35:348  INFO 14800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8087 (http)
+20:20:35:349  INFO 14800 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+20:20:35:349  INFO 14800 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+20:20:35:349  INFO 14800 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+20:20:35:352  INFO 14800 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+20:20:35:357  INFO 14800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+20:20:35:357  INFO 14800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+20:20:35:452  INFO 14800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+20:20:35:452  INFO 14800 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 921 ms
+20:20:36:612 ERROR 14800 --- [main] c.b.m.core.MybatisConfiguration          : mapper[com.hmall.team.mapper.TeamMemberMapper.deleteByTeamIdAndPersonnelIds] is ignored, because it exists, maybe from xml file
+20:20:39:636  INFO 14800 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+20:20:39:759  INFO 14800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8087 (http) with context path ''
+20:20:41:437  INFO 14800 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+20:20:41:445  INFO 14800 --- [main] com.hmall.team.TeamAnalysisApplication   : Started TeamAnalysisApplication in 9.241 seconds (JVM running for 10.169)
+20:20:58:294  INFO 14800 --- [http-nio-8087-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:20:58:295  INFO 14800 --- [http-nio-8087-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+20:20:58:296  INFO 14800 --- [http-nio-8087-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+20:20:58:360  INFO 14800 --- [http-nio-8087-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+20:21:00:448  INFO 14800 --- [http-nio-8087-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+20:21:00:557  INFO 14800 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 开始创建团队: 资料分析专业
+20:21:00:558  INFO 14800 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 能力要求: 具备专业知识和教学能力
+20:21:00:558  INFO 14800 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 团队协作能力要求: 良好的团队协作精神
+20:21:00:568  INFO 14800 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 职位需求JSON: [{"positionName":"教学主管","personNum":1,"position":"系主任","education":"博士","major":"生物学","maxAge":60,"minAge":20,"selectedPersonnelIds":null},{"positionName":"课程教师","personNum":3,"position":"教师","education":"本科","major":"计算机","maxAge":50,"minAge":20,"selectedPersonnelIds":null}]
+20:21:00:568  INFO 14800 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 设置到实体的能力要求: 具备专业知识和教学能力
+20:21:00:568  INFO 14800 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 设置到实体的团队协作能力要求: 良好的团队协作精神
+20:21:00:568  INFO 14800 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 准备插入数据库的团队需求实体: TeamRequirement(id=null, userId=1, teamSize=5, positionRequirements=教学主管、课程教师, abilityRequirements=具备专业知识和教学能力, teamworkAbilityRequirements=良好的团队协作精神, needTeamFormation=true, createTime=2025-06-30T20:21:00.558712700, updateTime=2025-06-30T20:21:00.558712700)
+20:21:00:823  INFO 14800 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 团队需求创建成功, id=50, 能力要求=具备专业知识和教学能力, 团队协作能力要求=良好的团队协作精神
+20:21:01:038  INFO 14800 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 团队基本信息创建成功, id=35
+20:21:01:490  INFO 14800 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 职位 教学主管 匹配到 3 个人员
+20:21:02:412  INFO 14800 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 职位 课程教师 匹配到 0 个人员
+20:21:02:521  INFO 14800 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 职位 教学主管 获取到 3 个已保存的推荐人员
+20:21:02:939  INFO 14800 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 职位 课程教师 获取到 0 个已保存的推荐人员
+20:22:21:607  INFO 14800 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+20:22:22:605  INFO 14800 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+20:22:32:561  INFO 22456 --- [main] com.hmall.team.TeamAnalysisApplication   : Starting TeamAnalysisApplication using Java 11.0.12 on WWJT with PID 22456 (E:\Cursor\ProjectCode\UnivTalentMGT\UnivTalentMGT\team-analysis-service\target\classes started by 23885 in E:\Cursor\ProjectCode\UnivTalentMGT\UnivTalentMGT)
+20:22:32:563 DEBUG 22456 --- [main] com.hmall.team.TeamAnalysisApplication   : Running with Spring Boot v2.7.12, Spring v5.3.27
+20:22:32:563  INFO 22456 --- [main] com.hmall.team.TeamAnalysisApplication   : The following 1 profile is active: "dev"
+20:22:33:118  INFO 22456 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b9673cb8-1524-3f20-a073-c79fbb0ad36a
+20:22:33:329  INFO 22456 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8087 (http)
+20:22:33:330  INFO 22456 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+20:22:33:330  INFO 22456 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+20:22:33:330  INFO 22456 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+20:22:33:334  INFO 22456 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+20:22:33:339  INFO 22456 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+20:22:33:339  INFO 22456 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+20:22:33:435  INFO 22456 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+20:22:33:435  INFO 22456 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 848 ms
+20:22:34:560 ERROR 22456 --- [main] c.b.m.core.MybatisConfiguration          : mapper[com.hmall.team.mapper.TeamMemberMapper.deleteByTeamIdAndPersonnelIds] is ignored, because it exists, maybe from xml file
+20:22:37:335  INFO 22456 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+20:22:37:442  INFO 22456 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8087 (http) with context path ''
+20:22:39:092  INFO 22456 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+20:22:39:100  INFO 22456 --- [main] com.hmall.team.TeamAnalysisApplication   : Started TeamAnalysisApplication in 8.791 seconds (JVM running for 10.368)
+20:31:15:641  INFO 22456 --- [http-nio-8087-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:31:15:641  INFO 22456 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+20:31:15:642  INFO 22456 --- [http-nio-8087-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+20:31:15:713  INFO 22456 --- [http-nio-8087-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+20:31:18:567  INFO 22456 --- [http-nio-8087-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+20:31:18:678  INFO 22456 --- [http-nio-8087-exec-1] c.h.t.s.impl.TeamInformationServiceImpl  : 开始创建团队: 资料分析专业
+20:31:18:678  INFO 22456 --- [http-nio-8087-exec-1] c.h.t.s.impl.TeamInformationServiceImpl  : 能力要求: 具备专业知识和教学能力
+20:31:18:678  INFO 22456 --- [http-nio-8087-exec-1] c.h.t.s.impl.TeamInformationServiceImpl  : 团队协作能力要求: 良好的团队协作精神
+20:31:18:690  INFO 22456 --- [http-nio-8087-exec-1] c.h.t.s.impl.TeamInformationServiceImpl  : 职位需求JSON: [{"positionName":"教学主管","personNum":1,"position":"系主任","education":"博士","major":"生物学","maxAge":60,"minAge":20,"selectedPersonnelIds":null},{"positionName":"课程教师","personNum":3,"position":"教师","education":"本科","major":"计算机","maxAge":50,"minAge":20,"selectedPersonnelIds":null}]
+20:31:18:690  INFO 22456 --- [http-nio-8087-exec-1] c.h.t.s.impl.TeamInformationServiceImpl  : 设置到实体的能力要求: 具备专业知识和教学能力
+20:31:18:690  INFO 22456 --- [http-nio-8087-exec-1] c.h.t.s.impl.TeamInformationServiceImpl  : 设置到实体的团队协作能力要求: 良好的团队协作精神
+20:31:18:690  INFO 22456 --- [http-nio-8087-exec-1] c.h.t.s.impl.TeamInformationServiceImpl  : 准备插入数据库的团队需求实体: TeamRequirement(id=null, userId=1, teamSize=5, positionRequirements=教学主管、课程教师, abilityRequirements=具备专业知识和教学能力, teamworkAbilityRequirements=良好的团队协作精神, needTeamFormation=true, createTime=2025-06-30T20:31:18.678597900, updateTime=2025-06-30T20:31:18.678597900)
+20:31:19:266  INFO 22456 --- [http-nio-8087-exec-1] c.h.t.s.impl.TeamInformationServiceImpl  : 团队需求创建成功, id=51, 能力要求=具备专业知识和教学能力, 团队协作能力要求=良好的团队协作精神
+20:31:19:485  INFO 22456 --- [http-nio-8087-exec-1] c.h.t.s.impl.TeamInformationServiceImpl  : 团队基本信息创建成功, id=36
+20:31:19:921  INFO 22456 --- [http-nio-8087-exec-1] c.h.t.s.impl.TeamInformationServiceImpl  : 职位 教学主管 匹配到 3 个人员
+20:31:21:796  INFO 22456 --- [http-nio-8087-exec-1] c.h.t.s.impl.TeamInformationServiceImpl  : 职位 课程教师 匹配到 0 个人员
+20:31:21:906  INFO 22456 --- [http-nio-8087-exec-1] c.h.t.s.impl.TeamInformationServiceImpl  : 职位 教学主管 获取到 3 个已保存的推荐人员
+20:31:22:329  INFO 22456 --- [http-nio-8087-exec-1] c.h.t.s.impl.TeamInformationServiceImpl  : 职位 课程教师 获取到 0 个已保存的推荐人员
+20:32:40:440  INFO 22456 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 开始创建团队: 资料分析专业
+20:32:40:440  INFO 22456 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 能力要求: 具备专业知识和教学能力
+20:32:40:440  INFO 22456 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 团队协作能力要求: 良好的团队协作精神
+20:32:40:440  INFO 22456 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 职位需求JSON: [{"positionName":"教学主管","personNum":1,"position":"系主任","education":"博士","major":"生物学","maxAge":60,"minAge":20,"selectedPersonnelIds":null},{"positionName":"课程教师","personNum":3,"position":"教师","education":"本科","major":"计算机科学与技术","maxAge":50,"minAge":20,"selectedPersonnelIds":null}]
+20:32:40:441  INFO 22456 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 设置到实体的能力要求: 具备专业知识和教学能力
+20:32:40:441  INFO 22456 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 设置到实体的团队协作能力要求: 良好的团队协作精神
+20:32:40:441  INFO 22456 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 准备插入数据库的团队需求实体: TeamRequirement(id=null, userId=1, teamSize=5, positionRequirements=教学主管、课程教师, abilityRequirements=具备专业知识和教学能力, teamworkAbilityRequirements=良好的团队协作精神, needTeamFormation=true, createTime=2025-06-30T20:32:40.440860600, updateTime=2025-06-30T20:32:40.440860600)
+20:32:40:654  INFO 22456 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 团队需求创建成功, id=52, 能力要求=具备专业知识和教学能力, 团队协作能力要求=良好的团队协作精神
+20:32:40:871  INFO 22456 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 团队基本信息创建成功, id=37
+20:32:41:296  INFO 22456 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 职位 教学主管 匹配到 3 个人员
+20:32:42:246  INFO 22456 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 职位 课程教师 匹配到 3 个人员
+20:32:42:984  INFO 22456 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 职位 教学主管 获取到 3 个已保存的推荐人员
+20:32:43:091  INFO 22456 --- [http-nio-8087-exec-3] c.h.t.s.impl.TeamInformationServiceImpl  : 职位 课程教师 获取到 3 个已保存的推荐人员

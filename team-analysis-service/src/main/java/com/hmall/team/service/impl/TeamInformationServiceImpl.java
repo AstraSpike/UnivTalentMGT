@@ -141,6 +141,8 @@ public class TeamInformationServiceImpl implements TeamInformationService {
                 needDTO.getMaxAge()
             );
             
+            log.info("职位 {} 匹配到 {} 个人员", needDTO.getPositionName(), matchedPersonnel.size());
+            
             // 计算匹配度并保存推荐关系
             List<PositionNeedMember> recommendMembers = new ArrayList<>();
             for (Map<String, Object> person : matchedPersonnel) {
@@ -159,10 +161,11 @@ public class TeamInformationServiceImpl implements TeamInformationService {
             // 根据匹配度排序
             recommendMembers.sort((a, b) -> b.getMatchDegree().compareTo(a.getMatchDegree()));
             
-            // 只保留前N个推荐
-            int maxRecommend = needDTO.getPersonNum() * 3; // 每个岗位需求人数的3倍
+            // 只保留前N个推荐（每个岗位需求人数的3倍）
+            int maxRecommend = needDTO.getPersonNum() * 3;
             if (recommendMembers.size() > maxRecommend) {
                 recommendMembers = recommendMembers.subList(0, maxRecommend);
+                log.info("职位 {} 限制推荐人数为 {}", needDTO.getPositionName(), maxRecommend);
             }
             
             // 保存推荐关系
@@ -215,7 +218,7 @@ public class TeamInformationServiceImpl implements TeamInformationService {
         result.setTeamDescription(team.getTeamDescription());
         
         List<TeamCreateResultDTO.PositionResult> positionResults = new ArrayList<>();
-        List<Map<String, Object>> allRecommendedPersonnel = new ArrayList<>();
+        List<Map<String, Object>> allMembers = new ArrayList<>();
         
         // 获取每个职位的推荐人员
         for (PositionNeed need : positionNeeds) {
@@ -223,8 +226,11 @@ public class TeamInformationServiceImpl implements TeamInformationService {
             positionResult.setPositionName(need.getPositionName());
             positionResult.setPosition(need.getPosition());
             
+            // 只获取已保存的推荐人员（按匹配度排序）
             List<Map<String, Object>> recommendedPersonnel = positionNeedMemberMapper.findRecommendedPersonnel(need.getId());
-            allRecommendedPersonnel.addAll(recommendedPersonnel);
+            log.info("职位 {} 获取到 {} 个已保存的推荐人员", need.getPositionName(), recommendedPersonnel.size());
+            
+            allMembers.addAll(recommendedPersonnel);
             
             positionResult.setRecommendedPersonnel(recommendedPersonnel.stream()
                 .map(this::convertToPersonnelInfo)
@@ -234,13 +240,13 @@ public class TeamInformationServiceImpl implements TeamInformationService {
         }
         
         // 设置团队总人数
-        result.setTotalSize(allRecommendedPersonnel.size());
+        result.setTotalSize(allMembers.size());
         
         // 计算年龄分布
-        result.setAgeDistribution(calculateAgeDistribution(allRecommendedPersonnel));
+        result.setAgeDistribution(calculateAgeDistribution(allMembers));
         
         // 计算性别比例
-        result.setGenderRatio(calculateGenderRatio(allRecommendedPersonnel));
+        result.setGenderRatio(calculateGenderRatio(allMembers));
         
         result.setPositionResults(positionResults);
         
